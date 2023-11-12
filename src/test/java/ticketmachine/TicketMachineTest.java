@@ -14,7 +14,8 @@ class TicketMachineTest {
 	}
 
 	@Test
-	// On vérifie que le prix affiché correspond au paramètre passé lors de l'initialisation
+	// On vérifie que le prix affiché correspond au paramètre passé lors de
+	// l'initialisation
 	// S1 : le prix affiché correspond à l’initialisation.
 	void priceIsCorrectlyInitialized() {
 		// Paramètres : valeur attendue, valeur effective, message si erreur
@@ -26,8 +27,7 @@ class TicketMachineTest {
 	void insertMoneyChangesBalance() {
 		machine.insertMoney(10);
 		machine.insertMoney(20);
-                // Les montants ont été correctement additionnés  
-		assertEquals(10 + 20, machine.getBalance(), "La balance n'est pas correctement mise à jour");              
+		// Les montants ont été correctement additionnés
+		assertEquals(10 + 20, machine.getBalance(), "La balance n'est pas correctement mise à jour");
 	}
-
 }
